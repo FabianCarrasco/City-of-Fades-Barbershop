@@ -8,13 +8,14 @@ html {
 }
 
 .logo {
-    width: 100px; 
-    height: 100px;
+    width: 200px; 
+    height: 200px;
     object-fit: cover;
     object-position: 50%;
 }
 
 .panel {
+    margin-top: 5rem;
     height: 10rem;
     display: flex;
     flex-direction: row;
@@ -27,21 +28,30 @@ html {
     text-decoration: none;
     color: white;
     font-size: x-large;
+    border-bottom: solid;
+    transition: font-size 200ms ease-out;
+}
+
+.panel-link:hover {
+    font-size: xx-large;
 }
 
 .panel-image {
-    flex-grow: 0.1;
+    flex-grow: 0.2;
+    width: auto;
+    height: auto;
 }
 
 .panel-button {
     display: flex;
     justify-content: center;
-    height: 2rem;
-    width: 5rem;
+    height: auto;
+    width: 2rem;
     flex-grow: 0.1;
-    border-bottom: solid;
     border-color: white;
+    transition: height 100ms ease-out;
 }
+
 
 .social-embedded {
     display: flex;
